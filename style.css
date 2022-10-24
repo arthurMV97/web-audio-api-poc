@@ -1,0 +1,96 @@
+#synth {
+    border: red solid 2px;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+#oscillator {
+    border: green solid 2px;
+    display: flex;
+}
+
+
+#adsr {
+    display: flex;
+    flex-direction: row;
+}
+.adsr-elements {
+    display: flex;
+    flex-direction: column;
+}
+#adsr input[type=range] {
+     appearance: slider-vertical; 
+     width: 1em;
+     margin:0 1em;
+}
+
+#adsr label {
+    margin: 0 0.8em;
+}
+
+#waveform-slider {
+    width: 13.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#waveform-slider > * {
+    width: fit-content;
+    margin: 0.2em;
+    border: solid 1px red;
+    display: flex;
+}
+
+
+#keyboard {
+    border: solid 1px salmon;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+
+}
+#octaves {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#octaves button {
+    margin: 0.5em;
+}
+
+#keys {
+    margin: 0;
+    padding: 0;
+}
+    ul {
+        position:relative;
+        border: solid black 1px;
+    }
+        li {      
+            margin:0;
+            padding:0;
+            list-style:none;
+            position:relative;
+            float:left
+            }
+
+        .white {
+            border-left: solid 1px grey;
+            border-bottom: solid 1px grey;
+            border-radius: 2px;
+            height: 8em;
+            width: 3em;
+            z-index:1;
+        }
+
+        .black {
+            background: blue;
+            margin:0 -1em 0 -1em;
+            height: 5em;
+            width: 2em;
+            z-index:2;
+        }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Synth</title>
+</head>
+<body>
+    <div id="synth">
+        <div id="oscillator">
+            <div id="adsr">
+                <div class="adsr-elements">
+                <input type="range" min="0" max="100" value="0" name="attack"/>
+                <label for="attack">A</label>
+                </div>
+                <div class="adsr-elements">
+                <input type="range" min="0" max="100" value="0" name="decay"/>
+                <label for="decay">D</label>
+                </div>
+                <div class="adsr-elements">
+                <input type="range" min="0" max="100" value="0" name="sustain"/>
+                <label for="sustain">S</label>
+                </div>
+                <div class="adsr-elements">
+                <input type="range" min="0" max="100" value="0" name="release"/>
+                <label for="release">R</label>
+                </div>
+            </div>
+            <div id="waveform">
+                <input type="range" min="0" max="100" value="detune" name="detune"/>
+                <label for="detune">DETUNE</label>
+                <div id="waveform-slider">
+                    <label for="sine">
+                        <input type="radio" name="waveforms" value="sine" checked>
+                        SINE
+                    </label>
+
+                    <label for="sawtooth">
+                        <input type="radio" name="waveforms" value="sawtooth">
+                        SAWTOOTH
+                    </label>
+
+                    <label for="square">
+                        <input type="radio" name="waveforms" value="square">
+                        SQUARE
+                   </label>
+
+                    <label for="triangle">
+                        <input type="radio" name="waveforms" value="triangle">
+                        TRIANGLE
+                    </label>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id="keyboard">
+            <div id="octaves">
+                <button>+</button>
+                <button>-</button>
+            </div>
+            <ul id="keys">
+                <li class="white" id="c">C</li>
+                <li class="black" id="c#">C#</li>
+                <li class="white" id="d">D</li>
+                <li class="black" id="d#">D#</li>
+                <li class="white" id="e">E</li>
+                <li class="white" id="f">F</li>
+                <li class="black" id="f#">F#</li>
+                <li class="white" id="g">G</li>
+                <li class="black" id="g#">G#</li>
+                <li class="white" id="a">A</li>
+                <li class="black" id="a#">A#</li>
+                <li class="white" id="b">B</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
